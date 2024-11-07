@@ -1,10 +1,12 @@
+import os
 
+x = int(input('342:\n'))
+first = x // 100
+second = (x // 10) % 10
+third = x % 10
 
-import math
-a = float(input("Введите длину стороны a: "))
-b = float(input("Введите длину стороны b: "))
-c = float(input("Введите длину стороны c: "))
-p = (a + b + c) / 2
-s = math.sqrt(p * (p- a) * (p - b) * (p - c))
-print("Площадь треугольника: ", s)
+y = third * 100 + second * 10 + first
+difference = abs(x - y)
 
+print(f'Разность между {x} и {y} равна {difference}')
+input()
