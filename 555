@@ -1,0 +1,5 @@
+number = int(input('Введите целое число: '))
+
+result = number * 10
+
+print('Результат:', result)
